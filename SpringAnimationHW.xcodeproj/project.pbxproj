@@ -13,7 +13,6 @@
 		454B8ABC294269DC00C55615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454B8ABB294269DC00C55615 /* Assets.xcassets */; };
 		454B8AC829426B0C00C55615 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 454B8AC729426B0C00C55615 /* SpringAnimation */; };
 		454B8ACA2942712100C55615 /* Extension + UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454B8AC92942712100C55615 /* Extension + UIButton.swift */; };
-		454B8ACE29427C4C00C55615 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454B8ACD29427C4C00C55615 /* Models.swift */; };
 		45A16AEA2943CE9300BC0AF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A16AE92943CE9300BC0AF4 /* Main.storyboard */; };
 		45A16AEC2943CF3800BC0AF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A16AEB2943CF3800BC0AF4 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -26,7 +25,6 @@
 		454B8ABB294269DC00C55615 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		454B8AC0294269DC00C55615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		454B8AC92942712100C55615 /* Extension + UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIButton.swift"; sourceTree = "<group>"; };
-		454B8ACD29427C4C00C55615 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		45A16AE92943CE9300BC0AF4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		45A16AEB2943CF3800BC0AF4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,12 +62,10 @@
 			children = (
 				454B8AD02943B77500C55615 /* Delegate */,
 				454B8ACF2943B76500C55615 /* Extension */,
-				454B8AB6294269D900C55615 /* AnimationViewController.swift */,
-				454B8ABB294269DC00C55615 /* Assets.xcassets */,
-				45A16AE92943CE9300BC0AF4 /* Main.storyboard */,
-				45A16AEB2943CF3800BC0AF4 /* LaunchScreen.storyboard */,
+				45A16AEF2943D65D00BC0AF4 /* ViewControllers */,
+				45A16AEE2943D65400BC0AF4 /* Storage */,
+				45A16AED2943D64700BC0AF4 /* Storyboard */,
 				454B8AC0294269DC00C55615 /* Info.plist */,
-				454B8ACD29427C4C00C55615 /* Models.swift */,
 			);
 			path = SpringAnimationHW;
 			sourceTree = "<group>";
@@ -89,6 +85,31 @@
 				454B8AB4294269D900C55615 /* SceneDelegate.swift */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		45A16AED2943D64700BC0AF4 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				45A16AE92943CE9300BC0AF4 /* Main.storyboard */,
+				45A16AEB2943CF3800BC0AF4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		45A16AEE2943D65400BC0AF4 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				454B8ABB294269DC00C55615 /* Assets.xcassets */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		45A16AEF2943D65D00BC0AF4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				454B8AB6294269D900C55615 /* AnimationViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,7 +193,6 @@
 				454B8AB3294269D900C55615 /* AppDelegate.swift in Sources */,
 				454B8AB5294269D900C55615 /* SceneDelegate.swift in Sources */,
 				454B8ACA2942712100C55615 /* Extension + UIButton.swift in Sources */,
-				454B8ACE29427C4C00C55615 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
