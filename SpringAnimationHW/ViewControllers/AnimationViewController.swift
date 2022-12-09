@@ -2,13 +2,12 @@ import UIKit
 import SpringAnimation
 
 class AnimationViewController: UIViewController {
-    
-    @IBOutlet var animationLabel: SpringLabel!
+    @IBOutlet var buttonOutlet: SpringButton!
     @IBOutlet var animationView: SpringView!
     @IBOutlet var textView: UITextView!
     
     override func viewDidLoad() {
-        animationLabel.text = "Следующая анимация:\n\(randomPreset!.rawValue)"
+        buttonOutlet.setTitle("Показать: \(randomPreset!.rawValue)", for: .normal)
     }
     
     var randomCurve = AnimationCurve.allCases.shuffled().randomElement()
@@ -32,8 +31,7 @@ Duration: \(String(format: "%.1f", animationView.duration))
         randomCurve = .allCases.randomElement()!
         randomPreset = .allCases.randomElement()!
         
-        animationLabel.text = "Следующая анимация:\n\(randomPreset!.rawValue)"
-
+        buttonOutlet.setTitle("Показать: \(randomPreset!.rawValue)", for: .normal)
     }
 
     @IBAction func nextPressed(_ sender: UIButton) {

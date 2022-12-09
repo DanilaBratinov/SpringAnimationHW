@@ -58,7 +58,6 @@
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Далее"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <integer key="value" value="20"/>
@@ -76,39 +75,21 @@
                                     <action selector="nextPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dOO-Y8-sgQ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Следующая анимация:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="z3A-SQ-VYv" customClass="SpringLabel" customModule="SpringAnimation">
-                                <rect key="frame" x="76" y="674.66666666666663" width="238" height="25.333333333333371"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideLeft"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.082284472880000001" green="0.058745875949999998" blue="0.10347240420000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="RQo-yp-QRr" firstAttribute="width" secondItem="keA-bx-L1D" secondAttribute="width" id="2ie-44-62F"/>
-                            <constraint firstItem="keA-bx-L1D" firstAttribute="top" secondItem="z3A-SQ-VYv" secondAttribute="bottom" constant="40" id="3qk-jv-J0V"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RQo-yp-QRr" secondAttribute="trailing" constant="64" id="FoK-AR-8dq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="keA-bx-L1D" secondAttribute="bottom" constant="20" id="KD5-On-M56"/>
                             <constraint firstItem="keA-bx-L1D" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MJC-fy-VNJ"/>
-                            <constraint firstItem="z3A-SQ-VYv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="P2R-s3-IFl"/>
                             <constraint firstItem="RQo-yp-QRr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="SLw-in-r9x"/>
                             <constraint firstItem="RQo-yp-QRr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="rbo-Zt-SLD"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="animationLabel" destination="z3A-SQ-VYv" id="FVj-ku-0Vq"/>
                         <outlet property="animationView" destination="RQo-yp-QRr" id="C6l-zf-paw"/>
+                        <outlet property="buttonOutlet" destination="keA-bx-L1D" id="swA-ua-YxV"/>
                         <outlet property="textView" destination="Vyc-us-YD2" id="V6C-mG-jDz"/>
                     </connections>
                 </viewController>
