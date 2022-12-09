@@ -50,7 +50,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keA-bx-L1D" customClass="SpringButton" customModule="SpringAnimation">
-                                <rect key="frame" x="64" y="740" width="262" height="50"/>
+                                <rect key="frame" x="64" y="721.33333333333337" width="262" height="50"/>
                                 <color key="backgroundColor" red="0.2517307842" green="0.081546439969999995" blue="0.4383314499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="tVu-Z1-1Z3"/>
@@ -81,9 +81,9 @@
                         <constraints>
                             <constraint firstItem="RQo-yp-QRr" firstAttribute="width" secondItem="keA-bx-L1D" secondAttribute="width" id="2ie-44-62F"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RQo-yp-QRr" secondAttribute="trailing" constant="64" id="FoK-AR-8dq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="keA-bx-L1D" secondAttribute="bottom" constant="20" id="KD5-On-M56"/>
                             <constraint firstItem="keA-bx-L1D" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MJC-fy-VNJ"/>
                             <constraint firstItem="RQo-yp-QRr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="SLw-in-r9x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="keA-bx-L1D" secondAttribute="bottom" multiplier="1.05" id="UfF-gf-WgC"/>
                             <constraint firstItem="RQo-yp-QRr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="rbo-Zt-SLD"/>
                         </constraints>
                     </view>
