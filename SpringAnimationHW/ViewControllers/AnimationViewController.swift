@@ -2,40 +2,37 @@ import UIKit
 import SpringAnimation
 
 class AnimationViewController: UIViewController {
-    @IBOutlet var buttonOutlet: SpringButton!
-    @IBOutlet var animationView: SpringView!
-    @IBOutlet var textView: UITextView!
-    
-    override func viewDidLoad() {
-        buttonOutlet.setTitle("Показать: \(randomPreset!.rawValue)", for: .normal)
+    @IBOutlet var buttonOutlet: SpringButton! {
+        didSet {
+            buttonOutlet.setTitle(animation.name, for: .normal)
+        }
     }
     
-    var randomCurve = AnimationCurve.allCases.shuffled().randomElement()
-    var randomPreset = AnimationPreset.allCases.shuffled().randomElement()
+    @IBOutlet var animationView: SpringView!
+    @IBOutlet var textView: UITextView! {
+        didSet {
+            textView.text = animation.description
+        }
+    }
+    
+    private var animation = Animation.getRandomAnimation()
+
     
     private func randomAnimation() {
-        animationView.curve = randomCurve!.rawValue
-        animationView.animation = randomPreset!.rawValue
-        animationView.duration = CGFloat.random(in: 0.5...2)
-        animationView.force = CGFloat.random(in: 0.5...2)
+        animationView.curve = animation.curve
+        animationView.animation = animation.name
+        animationView.duration = animation.duration
+        animationView.force = animation.force
         animationView.animate()
         
-        textView.text =
-"""
-Preset: \(randomPreset!)
-Curve: \(randomCurve!)
-Force: \(String(format: "%.1f", animationView.force))
-Duration: \(String(format: "%.1f", animationView.duration))
-"""
-        
-        randomCurve = .allCases.randomElement()!
-        randomPreset = .allCases.randomElement()!
-        
-        buttonOutlet.setTitle("Показать: \(randomPreset!.rawValue)", for: .normal)
+        textView.text = animation.description
     }
-
+    
     @IBAction func nextPressed(_ sender: UIButton) {
         sender.pulsate()
         randomAnimation()
+    
+        animation = Animation.getRandomAnimation()
+        sender.setTitle(animation.name, for: .normal)
     }
 }
